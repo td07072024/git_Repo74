@@ -1,0 +1,32 @@
+The syntax of Java is largely influenced by C++ and C. Unlike C++, which combines the syntax for structured, generic, and object-oriented programming, Java was built almost exclusively as an object-oriented language.[17] All code is written inside classes, and every data item is an object, with the exception of the primitive data types, (i.e. integers, floating-point numbers, boolean values, and characters), which are not objects for performance reasons. Java reuses some popular aspects of C++ (such as the printf method).
+
+Unlike C++, Java does not support operator overloading[58] or multiple inheritance for classes, though multiple inheritance is supported for interfaces.[59]
+
+Java uses comments similar to those of C++. There are three different styles of comments: a single line style marked with two slashes (//), a multiple line style opened with /* and closed with */, and the Javadoc commenting style opened with /** and closed with */. The Javadoc style of commenting allows the user to run the Javadoc executable to create documentation for the program and can be read by some integrated development environments (IDEs) such as Eclipse to allow developers to access documentation within the IDE.
+
+Hello world
+The following is a simple example of a "Hello, World!" program that writes a message to the standard output:
+
+public class Example {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+Special classes
+
+This section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed.
+Find sources: "Java" programming language – news · newspapers · books · scholar · JSTOR (May 2019) (Learn how and when to remove this message)
+Applet
+Main article: Java applet
+Java applets are programs embedded in other applications, mainly in web pages displayed in web browsers. The Java applet API was deprecated with the release of Java 9 in 2017.[60][61]
+
+Servlet
+Main article: Java servlet
+Java servlet technology provides Web developers with a simple, consistent mechanism for extending the functionality of a Web server and for accessing existing business systems. Servlets are server-side Java EE components that generate responses to requests from clients. Most of the time, this means generating HTML pages in response to HTTP requests, although there are a number of other standard servlet classes available, for example for WebSocket communication.
+
+The Java servlet API has to some extent been superseded (but still used under the hood) by two standard Java technologies for web services:
+
+the Java API for RESTful Web Services (JAX-RS 2.0) useful for AJAX, JSON and REST services, and
+the Java API for XML Web Services (JAX-WS) useful for SOAP Web Services.
+Typical implementations of these APIs on Application Servers or Servlet Containers use a standard servlet for handling all interactions with the HTTP requests and responses that delegate to the web service methods for the actual business logic.
+
