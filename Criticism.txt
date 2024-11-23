@@ -1,0 +1,64 @@
+Criticisms directed at Java include the implementation of generics,[67] speed,[50] the handling of unsigned numbers,[68] the implementation of floating-point arithmetic,[69] and a history of security vulnerabilities in the primary Java VM implementation HotSpot.[70] Developers have criticized the complexity and verbosity of the Java Persistence API (JPA), a standard part of Java EE. This has led to increased adoption of higher-level abstractions like Spring Data JPA, which aims to simplify database operations and reduce boilerplate code. The growing popularity of such frameworks suggests limitations in the standard JPA implementation's ease-of-use for modern Java development.[71]
+
+Class libraries
+Main article: Java Class Library
+The Java Class Library is the standard library, developed to support application development in Java. It is controlled by Oracle in cooperation with others through the Java Community Process program.[72] Companies or individuals participating in this process can influence the design and development of the APIs. This process has been a subject of controversy during the 2010s.[73] The class library contains features such as:
+
+The core libraries, which include:
+Input/output (I/O or IO)[74] and non-blocking I/O (NIO), or IO/NIO[75]
+Networking[76] (new user agent (HTTP client) since Java 11[77])
+Reflective programming (reflection)
+Concurrent computing (concurrency)[74]
+Generics
+Scripting, Compiler
+Functional programming (Lambda, streaming)
+Collection libraries that implement data structures such as lists, dictionaries, trees, sets, queues and double-ended queue, or stacks[78]
+XML Processing (Parsing, Transforming, Validating) libraries
+Security[79]
+Internationalization and localization libraries[80]
+The integration libraries, which allow the application writer to communicate with external systems. These libraries include:
+The Java Database Connectivity (JDBC) API for database access
+Java Naming and Directory Interface (JNDI) for lookup and discovery
+Java remote method invocation (RMI) and Common Object Request Broker Architecture (CORBA) for distributed application development
+Java Management Extensions (JMX) for managing and monitoring applications
+User interface libraries, which include:
+The (heavyweight, or native) Abstract Window Toolkit (AWT), which provides GUI components, the means for laying out those components and the means for handling events from those components
+The (lightweight) Swing libraries, which are built on AWT but provide (non-native) implementations of the AWT widgetry
+APIs for audio capture, processing, and playback
+JavaFX
+A platform dependent implementation of the Java virtual machine that is the means by which the bytecodes of the Java libraries and third-party applications are executed
+Plugins, which enable applets to be run in web browsers
+Java Web Start, which allows Java applications to be efficiently distributed to end users across the Internet
+Licensing and documentation
+Documentation
+Main article: Javadoc
+Javadoc is a comprehensive documentation system, created by Sun Microsystems. It provides developers with an organized system for documenting their code. Javadoc comments have an extra asterisk at the beginning, i.e. the delimiters are /** and */, whereas the normal multi-line comments in Java are delimited by /* and */, and single-line comments start with //.[81]
+
+Implementations
+See also: Free Java implementations and List of Java compilers
+
+This section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed.
+Find sources: "Java" programming language – news · newspapers · books · scholar · JSTOR (September 2023) (Learn how and when to remove this message)
+Oracle Corporation owns the official implementation of the Java SE platform, due to its acquisition of Sun Microsystems on January 27, 2010. This implementation is based on the original implementation of Java by Sun. The Oracle implementation is available for Windows, macOS, Linux, and Solaris. Because Java lacks any formal standardization recognized by Ecma International, ISO/IEC, ANSI, or other third-party standards organizations, the Oracle implementation is the de facto standard.
+
+The Oracle implementation is packaged into two different distributions: The Java Runtime Environment (JRE) which contains the parts of the Java SE platform required to run Java programs and is intended for end users, and the Java Development Kit (JDK), which is intended for software developers and includes development tools such as the Java compiler, Javadoc, Jar, and a debugger. Oracle has also released GraalVM, a high performance Java dynamic compiler and interpreter.
+
+OpenJDK is another Java SE implementation that is licensed under the GNU GPL. The implementation started when Sun began releasing the Java source code under the GPL. As of Java SE 7, OpenJDK is the official Java reference implementation.
+
+The goal of Java is to make all implementations of Java compatible. Historically, Sun's trademark license for usage of the Java brand insists that all implementations be compatible. This resulted in a legal dispute with Microsoft after Sun claimed that the Microsoft implementation did not support Java remote method invocation (RMI) or Java Native Interface (JNI) and had added platform-specific features of their own. Sun sued in 1997, and, in 2001, won a settlement of US$20 million, as well as a court order enforcing the terms of the license from Sun.[82] As a result, Microsoft no longer ships Java with Windows.
+
+Platform-independent Java is essential to Java EE, and an even more rigorous validation is required to certify an implementation. This environment enables portable server-side applications.
+
+Use outside the Java platform
+The Java programming language requires the presence of a software platform in order for compiled programs to be executed.
+
+Oracle supplies the Java platform for use with Java. The Android SDK is an alternative software platform, used primarily for developing Android applications with its own GUI system.
+
+Android
+The Java language is a key pillar in Android, an open source mobile operating system. Although Android, built on the Linux kernel, is written largely in C, the Android SDK uses the Java language as the basis for Android applications but does not use any of its standard GUI, SE, ME or other established Java standards.[83] The bytecode language supported by the Android SDK is incompatible with Java bytecode and runs on its own virtual machine, optimized for low-memory devices such as smartphones and tablet computers. Depending on the Android version, the bytecode is either interpreted by the Dalvik virtual machine or compiled into native code by the Android Runtime.
+
+Android does not provide the full Java SE standard library, although the Android SDK does include an independent implementation of a large subset of it. It supports Java 6 and some Java 7 features, offering an implementation compatible with the standard library (Apache Harmony).
+
+Controversy
+See also: Oracle America, Inc. v. Google, Inc.
+The use of Java-related technology in Android led to a legal dispute between Oracle and Google. On May 7, 2012, a San Francisco jury found that if APIs could be copyrighted, then Google had infringed Oracle's copyrights by the use of Java in Android devices.[84] District Judge William Alsup ruled on May 31, 2012, that APIs cannot be copyrighted,[85] but this was reversed by the United States Court of Appeals for the Federal Circuit in May 2014.[86] On May 26, 2016, the district court decided in favor of Google, ruling the copyright infringement of the Java API in Android constitutes fair use.[87] In March 2018, this ruling was overturned by the Appeals Court, which sent down the case of determining the damages to federal court in San Francisco.[88] Google filed a petition for writ of certiorari with the Supreme Court of the United States in January 2019 to challenge the two rulings that were made by the Appeals Court in Oracle's favor.[89] On April 5, 2021, the Court ruled 6–2 in Google's favor, that its use of Java APIs should be considered fair use. However, the court refused to rule on the copyrightability of APIs, choosing instead to determine their ruling by considering Java's API copyrightable "purely for argument's sake."
